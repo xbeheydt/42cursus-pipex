@@ -49,7 +49,7 @@ existe un autre moyen en gardant le prototype ISO C. Via la variable globale
 
 Dans le cas de l'utilisation d'application dans notre `PATH`, il nous faudra
 donc avoir le `PATH` de l'environnement actuel pour la fonction `execve()`.
-__Le détail sera étudier dans le chapitre
+_Le détail sera étudier dans le chapitre
 [Exécution d'un processus](./EXEC.md)._
 
 ## Les arguments
