@@ -49,3 +49,5 @@
 ## Liens complémentaires
 
 - [cunits42](https://github.com/xbeheydt/cunits42/docs/SUMMARY.md)
+- [setuid Wikipedia FR](https://fr.wikipedia.org/wiki/Setuid)
+- [setuid Wikipedia ENG](https://en.wikipedia.org/wiki/Setuid)
