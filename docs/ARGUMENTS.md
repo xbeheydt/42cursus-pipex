@@ -71,6 +71,28 @@ C'est un tableau de chaîne de caractères, se terminant par `NULL`.
 Le problème réside dans le fait de découper les parties "cmdN". Car ici, nous
 aurons dans une chaine la commande et ses arguments.
 
+**Détails**
+
+- Dans le cas de la partie obligatoire, notre `argv` sera découpé tel que :
+
+	|     argv[0]      | argv[1] | argv[2] | argv[3] | argv[4] |
+	|:----------------:|:-------:|:-------:|:-------:|:-------:|
+	| nom du programme |  infile |   cmd1  |   cmd2  | outfile |
+
+- Dans le cas du piping de la partie bonus, notre `argv` sera découpé de la
+  manière suivante :
+
+	|     argv[0]      | argv[1] | argv[2] | argv[*] | argv[N] |
+	|:----------------:|:-------:|:-------:|:-------:|:-------:|
+	| nom du programme |  infile |   cmd1  |   cmd*  | outfile |
+
+- Dans le cas du `here_doc`_ de la partie bonus, notre `argv` sera découpé de la
+  manière suivante :
+
+	|     argv[0]      |   argv[1]    |  argv[2]   | argv[3] | argv[4] | argv[5] |
+	|:----------------:|:------------:|:----------:|:-------:|:-------:|:-------:|
+	| nom du programme |  `here_doc`_ |   LIMITER  |   cmd   | cmd1    | outfile |
+
 ## Les variables d'environnement
 
 Comme expliqué un peu plus haut, `execve()` demandera l'environnement. En
