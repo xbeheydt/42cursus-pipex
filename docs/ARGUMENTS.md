@@ -89,9 +89,9 @@ aurons dans une chaine la commande et ses arguments.
 - Dans le cas du `here_doc`_ de la partie bonus, notre `argv` sera découpé de la
   manière suivante :
 
-	|     argv[0]      |   argv[1]    |  argv[2]   | argv[3] | argv[4] | argv[5] |
-	|:----------------:|:------------:|:----------:|:-------:|:-------:|:-------:|
-	| nom du programme |  `here_doc`_ |   LIMITER  |   cmd   | cmd1    | outfile |
+	|     argv[0]      |   argv[1]   |  argv[2]   | argv[3] | argv[4] | argv[5] |
+	|:----------------:|:-----------:|:----------:|:-------:|:-------:|:-------:|
+	| nom du programme |  `here_doc` |   LIMITER  |   cmd   | cmd1    | outfile |
 
 ## Les variables d'environnement
 
