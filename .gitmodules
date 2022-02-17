@@ -1,0 +1,7 @@
+[submodule "deps/cunits42"]
+	path = deps/cunits42
+	url = git@github.com:xbeheydt/cunits42.git
+
+[submodule "pipex"]
+	path = pipex
+	url = git@github.com:xbeheydt/42cursus-pipex-src.git

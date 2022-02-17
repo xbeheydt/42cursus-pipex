@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Bonus|x64">
+      <Configuration>Bonus</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Mandatory|x64">
+      <Configuration>Mandatory</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{828b7bc9-e519-4af6-9441-a32be46cf4fb}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>_42cursus_pipex</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{FC1A4D80-50E9-41DA-9192-61C0DBAA00D2}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Bonus|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteRootDir>/tmp</RemoteRootDir>
+    <RemoteProjectRelDir>$(SolutionName)</RemoteProjectRelDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mandatory|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Makefile</ConfigurationType>
+    <RemoteRootDir>/tmp</RemoteRootDir>
+    <RemoteProjectRelDir>$(SolutionName)</RemoteProjectRelDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Bonus|x64'">
+    <NMakeIncludeSearchPath>pipex;deps/cunits42/include;tests</NMakeIncludeSearchPath>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <RemoteDeployDir>$(RemoteRootDir)/$(SolutionName)</RemoteDeployDir>
+    <NMakeForcedIncludes>
+    </NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>INTERNAL;MANDATORY;BONUS</NMakePreprocessorDefinitions>
+    <RemoteBuildCommandLine>make bonus</RemoteBuildCommandLine>
+    <RemoteReBuildCommandLine>make re</RemoteReBuildCommandLine>
+    <RemoteCleanCommandLine>make fclean</RemoteCleanCommandLine>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Mandatory|x64'">
+    <NMakeIncludeSearchPath>pipex;deps/cunits42/include;tests</NMakeIncludeSearchPath>
+    <RemoteCCompileToolExe>gcc</RemoteCCompileToolExe>
+    <RemoteDeployDir>$(RemoteRootDir)/$(SolutionName)</RemoteDeployDir>
+    <NMakeForcedIncludes>
+    </NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>INTERNAL;MANDATORY</NMakePreprocessorDefinitions>
+    <RemoteBuildCommandLine>make mandatory</RemoteBuildCommandLine>
+    <RemoteReBuildCommandLine>make re</RemoteReBuildCommandLine>
+    <RemoteCleanCommandLine>make fclean</RemoteCleanCommandLine>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include=".gitignore" />
+    <None Include="docs\fr.subject-pipex.pdf" />
+    <None Include="Makefile" />
+    <None Include="pipex\.editorconfig" />
+    <None Include="pipex\.gitignore" />
+    <None Include="pipex\Makefile" />
+    <None Include="README.md" />
+    <None Include="tests\cmd1.sh" />
+    <None Include="tests\cmd2.sh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pipex\pipex.h" />
+    <ClInclude Include="tests\tests.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pipex\pipex.c" />
+    <ClCompile Include="pipex\pipex_bonus.c" />
+    <ClCompile Include="tests\test_main.c" />
+  </ItemGroup>
+  <ItemDefinitionGroup />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{c9902fc6-3bfa-4a1f-a03c-aeca6daf844c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pipex">
+      <UniqueIdentifier>{8d0c19c9-8fb4-4b6a-bca6-bb12e29703c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Header Files">
+      <UniqueIdentifier>{bf0ba3ae-4722-4607-b6a7-2d6eaa78865e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Source Files">
+      <UniqueIdentifier>{42bee7c6-e09e-451a-9ce5-e762a8e65459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pipex\Header Files">
+      <UniqueIdentifier>{7885026a-0705-4160-98a9-992abdbf3870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pipex\Source Files">
+      <UniqueIdentifier>{cae65822-2728-4111-b51c-12c50ee95847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Script Files">
+      <UniqueIdentifier>{a72651b7-c0ca-44c1-bd95-e747ba2141e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Doc Files">
+      <UniqueIdentifier>{e5ad77bb-c696-418f-98ef-ba3c4630c661}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include=".gitignore" />
+    <None Include="Makefile" />
+    <None Include="README.md" />
+    <None Include="pipex\.editorconfig">
+      <Filter>Pipex</Filter>
+    </None>
+    <None Include="pipex\.gitignore">
+      <Filter>Pipex</Filter>
+    </None>
+    <None Include="pipex\Makefile">
+      <Filter>Pipex</Filter>
+    </None>
+    <None Include="tests\cmd1.sh">
+      <Filter>Tests\Script Files</Filter>
+    </None>
+    <None Include="tests\cmd2.sh">
+      <Filter>Tests\Script Files</Filter>
+    </None>
+    <None Include="docs\fr.subject-pipex.pdf">
+      <Filter>Doc Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tests\tests.h">
+      <Filter>Tests\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pipex\pipex.h">
+      <Filter>Pipex\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tests\test_main.c">
+      <Filter>Tests\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipex\pipex.c">
+      <Filter>Pipex\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pipex\pipex_bonus.c">
+      <Filter>Pipex\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
