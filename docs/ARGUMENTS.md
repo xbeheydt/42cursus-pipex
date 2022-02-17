@@ -69,7 +69,7 @@ le cas du bonus `argc >= 5`.
 C'est un tableau de chaîne de caractères, se terminant par `NULL`.
 
 Le problème réside dans le fait de découper les parties "cmdN". Car ici, nous
-aurons dans une chainen la commande et ses arguments.
+aurons dans une chaine la commande et ses arguments.
 
 ## Les variables d'environnement
 
