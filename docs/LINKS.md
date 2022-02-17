@@ -20,7 +20,7 @@
 - [read](http://manpagesfr.free.fr/man/man2/read.2.html)
 - [write](http://manpagesfr.free.fr/man/man2/write.2.html)
 - [malloc](http://manpagesfr.free.fr/man/man3/malloc.3.html)
-- [wait](http://manpagesfr.free.fr/man/man2/wait.2.html)
+- [wait/waitpid](http://manpagesfr.free.fr/man/man2/wait.2.html)
 - [free](http://manpagesfr.free.fr/man/man1/free.1.html)
 - [pipe](http://manpagesfr.free.fr/man/man2/pipe.2.html)
 - [dup/dup2](http://manpagesfr.free.fr/man/man2/dup.2.html)
