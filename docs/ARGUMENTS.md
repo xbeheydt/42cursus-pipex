@@ -86,12 +86,14 @@ aurons dans une chaine la commande et ses arguments.
 	|:----------------:|:-------:|:-------:|:-------:|:-------:|
 	| nom du programme |  infile |   cmd1  |   cmd*  | outfile |
 
-- Dans le cas du `here_doc`_ de la partie bonus, notre `argv` sera découpé de la
+- Dans le cas du `here_doc` de la partie bonus, notre `argv` sera découpé de la
   manière suivante :
 
 	|     argv[0]      |   argv[1]   |  argv[2]   | argv[3] | argv[4] | argv[5] |
 	|:----------------:|:-----------:|:----------:|:-------:|:-------:|:-------:|
 	| nom du programme |  `here_doc` |   LIMITER  |   cmd   | cmd1    | outfile |
+
+> A déterminer, si le nombre de commande pour le `here_doc` est variable.
 
 ## Les variables d'environnement
 
