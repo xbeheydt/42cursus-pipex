@@ -69,6 +69,7 @@ Le tester dispose de recettes :
 - `internal-mandatory`, `internal-bonus` ou `internal` : sont des recettes liées
   spécifiquement à mon projet, celles-ci sont à modifier pour votre projet et
   ses mécaniques internes.
+- `build` : effectue la compilation du projet en mode bonus.
 - `install` : cette recette copie l'exécutable dans le path `~/.local/bin`.
 - `re`
 - `clean`

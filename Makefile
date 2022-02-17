@@ -49,3 +49,10 @@ bonus:
 	$(CC) ${CFLAGS} ${IFLAGS} -DINTERNAL -DBONUS ${LDFLAGS} -o a.out $(addprefix tests/, ${SRCS}) ${LFLAGS}
 
 re: fclean mandatory
+
+build:
+	$(MAKE) -C pipex bonus
+
+install: build
+	mkdir -p ~/.local/bin
+	install -D -m 755 ./pipex/pipex ~/.local/bin/pipex
