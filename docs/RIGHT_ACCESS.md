@@ -7,7 +7,7 @@
 	Created: 2022/02/17
 
 -->
-# 42cursus - PIPEX - Les droits d'Accès
+# 42cursus - PIPEX - Les Droits d'Accès
 
 Le projet nous met fasse à un problème les droits d'accès.
 On parlera de droits en **lecture**, **écriture** et **exécution**.
@@ -49,6 +49,8 @@ Nous devons avoir au minimum le droit de lecture via nos droits ou via le
 
 Nous devons avoir au minimum le droit exécution via nos droits ou via le
 `setuid` de l'application appelante, afin de pouvoir lancer la commande.
+
+> 
 
 **outfile**
 

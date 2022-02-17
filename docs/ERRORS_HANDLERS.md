@@ -8,3 +8,5 @@
 
 -->
 # 42cursus - PIPEX - La Gestion des Erreurs
+
+argv[0] nom de notre ap

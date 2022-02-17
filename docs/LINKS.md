@@ -11,6 +11,21 @@
 
 [PDF du projet](./fr.subject-pipex.pdf)
 
+## Documentation LIBC
+
+- [The Basic Program/System Interface](https://www.gnu.org/software/libc/manual/html_node/Program-Basics.html)
+- [Program Arguments](https://www.gnu.org/software/libc/manual/html_node/Program-Arguments.html)
+- [Program Argument Syntax Conventions](https://www.gnu.org/software/libc/manual/html_node/Argument-Syntax.html)
+- [Environment Variables](https://www.gnu.org/software/libc/manual/html_node/Environment-Variables.html)
+
+## ToC
+
+- [Environment Variables](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap08.html)
+
+## CMPSC 311
+
+- [Environment Variables, Part 2](http://www.cse.psu.edu/~deh25/cmpsc311/Lectures/Environment-Variables/Environment-Variables-2.html)
+
 ## MANS des fonctions autorisées
 
 - [access](http://manpagesfr.free.fr/man/man2/access.2.html)
