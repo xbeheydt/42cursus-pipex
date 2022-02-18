@@ -3,14 +3,17 @@
 
 # include <cunits42.h>
 
-#ifdef DEBUG
-# define DEBUG(...) printf(__VA_ARGS__);
-#else
-# define DEBUG(...)
-#endif /* DEBUG */
+# ifdef DEBUG
+#  define DEBUG(...) printf(__VA_ARGS__);
+# else
+#  define DEBUG(...)
+# endif /* DEBUG */
+
+extern char *g_infiles[];
+extern char *g_cmds[];
 
 # ifdef INTERNAL
-#endif /* INTERNAL */
+# endif /* INTERNAL */
 
 # ifdef MANDATORY
 # endif /* MANDATORY */

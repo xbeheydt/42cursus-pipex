@@ -63,14 +63,25 @@
   <ItemGroup>
     <None Include=".editorconfig" />
     <None Include=".gitignore" />
+    <None Include="docs\ARGUMENTS.md" />
+    <None Include="docs\DETAILS.md" />
+    <None Include="docs\ERRORS_HANDLERS.md" />
+    <None Include="docs\EXEC.md" />
     <None Include="docs\fr.subject-pipex.pdf" />
+    <None Include="docs\LINKS.md" />
+    <None Include="docs\RIGHT_ACCESS.md" />
+    <None Include="docs\SUMMARY.md" />
     <None Include="Makefile" />
     <None Include="pipex\.editorconfig" />
     <None Include="pipex\.gitignore" />
     <None Include="pipex\Makefile" />
     <None Include="README.md" />
-    <None Include="tests\cmd1.sh" />
-    <None Include="tests\cmd2.sh" />
+    <None Include="tests\data\infile_multi_nl_txt" />
+    <None Include="tests\data\infile_nonl_txt" />
+    <None Include="tests\data\infile_simple_txt" />
+    <None Include="tests\scripts\cat.sh" />
+    <None Include="tests\scripts\ls-l.sh" />
+    <None Include="tests\scripts\wc-l.sh" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pipex\pipex.h" />

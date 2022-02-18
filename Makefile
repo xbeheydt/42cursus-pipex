@@ -56,3 +56,7 @@ build:
 install: build
 	mkdir -p ~/.local/bin
 	install -D -m 755 ./pipex/pipex ~/.local/bin/pipex
+
+test:
+	sudo mkdir /tmp/test-root
+	sudo rm -rf /tmp/test-root
